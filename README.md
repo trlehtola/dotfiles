@@ -9,7 +9,7 @@ Ensure you have the following installed on your system
 ### Git
 
 ```
-sudo apt install git-all
+sudo apt install git
 
 ```
 
