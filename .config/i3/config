@@ -179,9 +179,15 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+## Start of my settings
 # lock screen
 bindsym $mod+Control+l exec --no-startup-id i3lock -i Pictures/lock.png
 
+# Add finnish and us keyboard layouts
+exec "setxkbmap -layout us,fi"
+exec "setxkbmap -option 'grp:win_space_toggle'"
+
+## End of my settings
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
