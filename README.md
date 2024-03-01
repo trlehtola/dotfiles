@@ -12,7 +12,6 @@ Ensure you have the following installed on your system
 sudo apt install git
 ```
 
-
 ### Neovim
 
 ```
@@ -77,6 +76,12 @@ First, check out the dotfiles repo in your $HOME directory using git
 ```
 $ git clone git@github.com:trlehtola/dotfiles.git
 $ cd dotfiles
+```
+
+Second, install Tmux Plugin Manager
+
+```
+https://github.com/tmux-plugins/tpm
 ```
 
 then use GNU stow to create symlinks
