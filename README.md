@@ -6,18 +6,20 @@ This directory contains the dotfiles for my system
 
 Ensure you have the following installed on your system
 
-### Neovim
-
-```
-curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
-sudo rm -rf /opt/nvim
-sudo tar -C /opt -xzf nvim-linux64.tar.gz
-```
-
 ### Git
 
 ```
 sudo apt install git
+```
+
+
+### Neovim
+
+```
+sudo apt install build-essential
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux64.tar.gz
+sudo rm -rf /opt/nvim
+sudo tar -C /opt -xzf nvim-linux64.tar.gz
 ```
 
 ### Nala
