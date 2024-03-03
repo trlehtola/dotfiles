@@ -180,6 +180,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 ## Start of my settings
+default_border pixel 0
+default_floating_border pixel 0
+
 # lock screen
 bindsym $mod+Control+l exec --no-startup-id i3lock -i Pictures/lock.png
 
