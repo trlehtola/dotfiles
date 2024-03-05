@@ -29,7 +29,7 @@ disabled = #707880
 monitor = ${env:MONITOR:}
 width = 100%
 height = 24pt
-radius = 6
+radius = 0
 
 ; dpi = 96
 
@@ -38,7 +38,7 @@ foreground = ${colors.foreground}
 
 line-size = 3pt
 
-border-size = 4pt
+border-size = 0pt
 border-color = #00000000
 
 padding-left = 0
@@ -89,10 +89,6 @@ label-urgent-padding = 1
 label-empty = %name%
 label-empty-foreground = ${colors.disabled}
 label-empty-padding = 1
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:60:...%
 
 [module/filesystem]
 type = internal/fs
