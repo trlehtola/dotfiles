@@ -63,10 +63,16 @@ sudo apt install nitrogen
 sudo apt install i3
 ```
 
+### Polybar
+
+```
+sudo apt install polybar
+```
+
 ## All apt packages in one
 
 ```
-sudo apt install git nala stow tmux kitty playerctl nitrogen i3
+sudo apt install git nala stow tmux kitty playerctl nitrogen i3 polybar
 ```
 
 ## Installation
