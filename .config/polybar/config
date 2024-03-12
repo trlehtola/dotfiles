@@ -228,7 +228,7 @@ format-prefix-foreground = ${colors.primary}
 label =  %output% 
 type = custom/script
 exec = ~/.config/polybar/scripts/bluetooth_keyboard.sh
-interval = 300  # Update interval in seconds (adjust as needed)
+interval = 5  # Update interval in seconds (adjust as needed)
 
 [settings]
 screenchange-reload = true
