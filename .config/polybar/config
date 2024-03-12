@@ -49,10 +49,10 @@ module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 
-font-0 = monospace;2
+font-0 = JetBrainsMono Nerd Font;2
 
 modules-left = xworkspaces xwindow
-modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth battery date
+modules-right = filesystem pulseaudio xkeyboard memory cpu wlan eth bluetooth_keyboard bluetooth_mouse battery date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -168,7 +168,27 @@ label-foreground = ${colors.primary}
 
 [module/battery]
 type = internal/battery
-label = POW
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
+; label-full-foreground = ${colors.primary}
+label-full =  %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-0-foreground = ${colors.alert}
+ramp-capacity-1 = 
+ramp-capacity-1-foreground = ${colors.warning}
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = " "
+animation-charging-1 = " "
+animation-charging-2 = " "
+animation-charging-3 = " "
+animation-charging-4 = " "
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
 ; This is useful in case the battery never reports 100% charge
 ; Default: 100
 full-at = 99
@@ -193,6 +213,22 @@ adapter = ADP1
 ;
 ; Default: 5
 poll-interval = C5C8C6
+
+[module/bluetooth_mouse]
+format-prefix = "󰍽 "
+format-prefix-foreground = ${colors.primary}
+label = %output% 
+type = custom/script
+exec = ~/.config/polybar/scripts/bluetooth_mouse.sh
+interval = 5 # Update interval in seconds (adjust as needed)
+
+[module/bluetooth_keyboard]
+format-prefix = "󰌌 "
+format-prefix-foreground = ${colors.primary}
+label =  %output% 
+type = custom/script
+exec = ~/.config/polybar/scripts/bluetooth_keyboard.sh
+interval = 300  # Update interval in seconds (adjust as needed)
 
 [settings]
 screenchange-reload = true
