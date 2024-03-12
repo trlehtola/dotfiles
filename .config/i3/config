@@ -198,5 +198,6 @@ bindsym XF86AudioPrev exec playerctl previous
 # Hide borders if only one window is open
 hide_edge_borders smart
 
+exec_always --no-startup-id $HOME/.config/i3/scripts/bluetooth.sh
 exec_always nitrogen --restore
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
