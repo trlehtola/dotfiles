@@ -184,7 +184,7 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Control+l exec --no-startup-id i3lock -i Pictures/lock.png
 
 # auto lock the screen
-exec_always "xautolock -detectsleep -time 15 -locker \"i3lock -i Pictures/lock.png\""
+# exec_always "xautolock -detectsleep -time 15 -locker \"i3lock -i Pictures/lock.png\""
 
 # Add finnish and us keyboard layouts
 exec_always "setxkbmap -layout us,fi"
